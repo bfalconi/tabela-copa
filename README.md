@@ -1,4 +1,4 @@
-# NLW Copa - Trilha Explorer
+# Tabela Copa do Mundo 2022
 
 ![preview](./assets/image/previewgithub.jpg)
 
