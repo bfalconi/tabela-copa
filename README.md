@@ -4,7 +4,7 @@
 
 Projeto construído como desafio pessoal a partir do evento Next Level Week (NLW) da Rocketseat.
 
-[📎 Clicando aqui você pode acessar esse projeto!](https://bfalconi.github.io/nlw-copa-challenge)
+[📎 Clicando aqui você pode acessar esse projeto!](https://bfalconi.github.io/tabela-copa)
 
 ## 💻 Tecnologias
 
