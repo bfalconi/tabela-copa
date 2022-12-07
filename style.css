@@ -100,7 +100,7 @@ p {
   flex-direction: column;
   gap: 24px;
 
-  width: 350px;
+  /* width: 350px; */
 }
 
 .card span {
@@ -112,6 +112,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30.62px;
 }
 
 .card ul li + li {
@@ -152,9 +153,9 @@ p {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 824px) {
   #cards {
-    max-width: 850px;
+    max-width: 824px;
     flex-direction: row;
     flex-wrap: wrap;
   }
