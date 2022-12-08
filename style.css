@@ -62,23 +62,24 @@ p {
   margin-inline: auto;
   }
 
-#cards {
+#cardsGroupStage {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 50px;
 }
 
-.card {
+.cardGroupStage {
   padding: 32px 23px;
   text-align: center;
+  height: fit-content;
 
   background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
 }
 
-.card h2 {
+.cardGroupStage h2 {
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -92,10 +93,10 @@ p {
   margin-inline: auto;
   margin-bottom: 40px;
 
-  color: #f7dd43;
+  color: var(--card-color-primary);
 }
 
-.card ul {
+.cardGroupStage ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -103,24 +104,24 @@ p {
   /* width: 350px; */
 }
 
-.card span {
+.cardGroupStage span {
   color: #e1e1e6;
   font-size: 16px;
 }
 
-.card ul li {
+.cardGroupStage ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30.62px;
 }
 
-.card ul li + li {
+.cardGroupStage ul li + li {
   padding-top: 24px; 
   border-top: 1px solid #323238;
 }
 
-.card ul li strong {
+.cardGroupStage ul li strong {
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
@@ -128,17 +129,17 @@ p {
   color: #e1e1e6;
 }
 
-.card ul li strong:hover,
-.card ul li img:hover {
+.cardGroupStage ul li strong:hover,
+.cardGroupStage ul li img:hover {
   transform: scale(1.1);
 }
 
-.card ul li strong,
-.card ul li img {
+.cardGroupStage ul li strong,
+.cardGroupStage ul li img {
   transition: transform 0.3s;
 }
 
-.card {
+.cardGroupStage {
   opacity: 0;
   animation: appear 1s forwards;
 }
@@ -153,10 +154,117 @@ p {
   }
 }
 
-@media (min-width: 824px) {
-  #cards {
-    max-width: 824px;
+@media (min-width: 840px) {
+  #cardsGroupStage {
+    max-width: 840px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 1680px) {
+  #cardsGroupStage {
+    max-width: 1680px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* ----------------------------------------------- */
+
+#cardsKnockout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.cardKnockout {
+  width: 600px;
+  padding: 32px 23px;
+  text-align: center;
+
+  background: var(--card-bg-color);
+  border-bottom: 2px solid var(--card-color-primary);
+  border-radius: 6px;
+}
+
+.cardKnockout h2 {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 16px;
+  border: 1px solid var(--card-title-border-color);
+  border-radius: 6px;
+
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 40px;
+
+  color: var(--card-color-primary);
+}
+
+.cardKnockout ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cardKnockout span {
+  color: #e1e1e6;
+  font-size: 16px;
+}
+
+.cardKnockout ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30.62px;
+}
+
+.cardKnockout ul li + li {
+  padding-top: 24px; 
+  border-top: 1px solid #323238;
+}
+
+.cardKnockout ul li strong {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+
+  color: #e1e1e6;
+}
+
+.cardKnockout ul li strong:hover,
+.cardKnockout ul li img:hover {
+  transform: scale(1.1);
+}
+
+.cardKnockout ul li strong,
+.cardKnockout ul li img {
+  transition: transform 0.3s;
+}
+
+.cardKnockout {
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+/* @media (min-width: 840px) {
+  #cardsKnockout {
+    max-width: 840px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+} */
+
+/* @media (min-width: 1680px) {
+  #cardsKnockout {
+    max-width: 1680px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+} */
