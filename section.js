@@ -9,12 +9,12 @@ function createGame(date, player1, score, player2) {
     `
 }
 
-// let delay = -0.2;
+let delay = -0.2;
 
 function createGroupStage(group, games) {
-    // delay = delay + 0.2;
+    delay = delay + 0.2;
     return `
-        <div class="cardGroupStage" >
+        <div class="cardGroupStage" style="animation-delay: ${delay}s">
             <h2>${group}</h2>
             <ul>
                 ${games}
@@ -24,9 +24,9 @@ function createGroupStage(group, games) {
 }
 
 function createKnockout(group, games) {
-    // delay = delay + 0.2;
+    delay = delay + 0.2;
     return `
-        <div class="cardKnockout" >
+        <div class="cardKnockout" style="animation-delay: ${delay}s">
             <h2>${group}</h2>
             <ul>
                 ${games}
@@ -97,22 +97,21 @@ document.querySelector('#cardsKnockout').innerHTML =
 createKnockout("Oitavas de Final", 
     createGame("Sab 03/12<br>12:00", "netherlands", "3 x 1", "united-states") + 
     createGame("Sab 03/12<br>16:00", "argentina", "2 x 1", "australia") + 
-    createGame("Seg 05/12<br>12:00", "japan", "1 x 1", "croatia") + 
+    createGame("Seg 05/12<br>12:00", "japan", "1 <span>1</span> x <span>3</span> 1", "croatia") + 
     createGame("Seg 05/12<br>16:00", "brazil", "4 x 1", "southkorea") + 
     createGame("Dom 04/12<br>12:00", "france", "3 x 1", "poland") + 
     createGame("Dom 04/12<br>16:00", "england", "3 x 0", "senegal") + 
-    createGame("Ter 06/12<br>12:00", "marocco", "0 x 0", "spain") + 
+    createGame("Ter 06/12<br>12:00", "marocco", "0 <span>3</span> x <span>0</span> 0", "spain") + 
     createGame("Ter 06/12<br>16:00", "portugal", "6 x 1", "switzerland")) +
 createKnockout("Quartas de Final", 
-    createGame("Sex 09/12<br>16:00", "netherlands", " x ", "argentina") + 
-    createGame("Sex 09/12<br>12:00", "croatia", " x ", "brazil") + 
+    createGame("Sex 09/12<br>16:00", "netherlands", "2 <span>3</span> x <span>4</span> 2", "argentina") + 
+    createGame("Sex 09/12<br>12:00", "croatia", "1 <span>4</span> x <span>2</span> 1", "brazil") + 
     createGame("Sab 10/12<br>16:00", "england", " x ", "france") + 
-    createGame("Sab 10/12<br>12:00", "marocco", " x ", "portugal")) 
-//     +
-// createKnockout("Semi Final", 
-//     createGame("Sex 09/12<br>16:00", "", " x ", "") + 
-//     createGame("Sex 09/12<br>12:00", "", " x ", "")) +
-// createKnockout("Disputa do 3 lugar", 
-//     createGame("Sex 09/12<br>16:00", "", " x ", "")) +
-// createKnockout("Final", 
-//     createGame("Sex 09/12<br>16:00", "", " x ", ""))
+    createGame("Sab 10/12<br>12:00", "marocco", " x ", "portugal")) +
+createKnockout("Semi Final", 
+    createGame("Sex 13/12<br>16:00", "argentina", " x ", "croatia") + 
+    createGame("Sex 14/12<br>16:00", "", " x ", "")) +
+createKnockout("Disputa do 3 lugar", 
+    createGame("Sex 17/12<br>12:00", "", " x ", "")) +
+createKnockout("Final", 
+    createGame("Sex 18/12<br>12:00", "", " x ", ""))

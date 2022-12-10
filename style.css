@@ -220,9 +220,7 @@ p {
 
 .cardKnockout ul li {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30.62px;
+  justify-content: space-around;
 }
 
 .cardKnockout ul li + li {
@@ -252,19 +250,3 @@ p {
   opacity: 0;
   animation: appear 1s forwards;
 }
-
-/* @media (min-width: 840px) {
-  #cardsKnockout {
-    max-width: 840px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-} */
-
-/* @media (min-width: 1680px) {
-  #cardsKnockout {
-    max-width: 1680px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-} */
