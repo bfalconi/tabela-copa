@@ -109,7 +109,7 @@ createKnockout("Quartas de Final",
     createGame("Sab 10/12<br>16:00", "england", "1 x 2", "france") + 
     createGame("Sab 10/12<br>12:00", "marocco", "1 x 0", "portugal")) +
 createKnockout("Semi Final", 
-    createGame("Sex 13/12<br>16:00", "argentina", " x ", "croatia") + 
+    createGame("Sex 13/12<br>16:00", "argentina", "3 x 0", "croatia") + 
     createGame("Sex 14/12<br>16:00", "france", " x ", "marocco")) +
 createKnockout("Disputa do 3 lugar", 
     createGame("Sex 17/12<br>12:00", "", " x ", "")) +
