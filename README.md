@@ -19,7 +19,7 @@ Você pode visualizar o layout base do projeto através desse [link](https://www
 
 ## 📝 Projeto
 
-É um projeto que apresenta a tabela da Copa do Mundo de 2022, contemplando os jogos, datas e horários. O projeto ainda está em desenvolvimento, com perspectiva de serem adicionados os resultados da fase de grupos, bem como construção das oitavas de final em diante.
+É um projeto que apresenta a tabela da Copa do Mundo de 2022, contemplando as datas, horários e resultados dos jogos da fase de grupos, bem como das eliminatórias até a final.
 
 ## 📩 Contato
 
